@@ -2,7 +2,7 @@ import pygame
 from color.Color import *
 from player.Player import *
 from settings.Settings import *
-# ^ importing all the needed files ^
+# ^ Importing all the needed files ^
 
 
 class Enemy:
@@ -12,7 +12,7 @@ class Enemy:
         self.__player_position = player_position
         self.alive = True
 
-    # draws Enemy
+    # Updates Enemy
     def update(self):
         if self.alive:
             if self.__vector.x > self.__player_position.x:
@@ -25,6 +25,7 @@ class Enemy:
             elif self.__vector.y < self.__player_position.y:
                 self.__vector.y += enemy_speed
 
+    # Draws enemy
     def draw(self):
         if self.alive:
             pygame.draw.rect(

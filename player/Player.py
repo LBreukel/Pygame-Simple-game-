@@ -1,10 +1,10 @@
 import pygame
 from color.Color import *
 from settings.Settings import *
-# ^ importing all the needed files ^
+# ^ Importing all the needed files ^
 
 
-# the class that makes the player exist and move
+# The class that makes the player exist and move
 class Player:
     def __init__(self, screen, vector, width, height):
         self.__screen = screen
@@ -13,7 +13,7 @@ class Player:
         self.__height = height
         self.alive = True
 
-    # updates the position of the player
+    # Updates the position of the player
     def update(self):
 
         if self.alive:
@@ -39,7 +39,7 @@ class Player:
                 if self.__vector.y > screen_height - self.__height:
                     self.__vector.y = (screen_height - self.__height)
 
-    # draw the player
+    # Draw the player
     def draw(self):
 
         if self.alive:

@@ -1,5 +1,4 @@
-
-# all the colors used in this project
+# All the colors used in this project
 white = [255, 255, 255]
 black = [0, 0, 0]
 red = [255, 0, 0]
