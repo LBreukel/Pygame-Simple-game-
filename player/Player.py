@@ -39,7 +39,7 @@ class Player:
                 if self.__vector.y > screen_height - self.__height:
                     self.__vector.y = (screen_height - self.__height)
 
-    # draw player
+    # draw the player
     def draw(self):
 
         if self.alive:
